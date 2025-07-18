@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+dcweb () 
+{ 
+    docker compose -f docker-compose-dev.yaml exec web "$@"
+}
+dcweb "$@"
